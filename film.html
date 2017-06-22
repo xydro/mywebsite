@@ -1,0 +1,87 @@
+<html>
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Rajdhani');	
+	body{
+		margin: 0;
+		padding: 0;
+		background : black;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	
+	h1{
+		font-family: 'Rajdhani' , sans-serif;
+		font-size: 50px;
+		letter-spacing: 8px;
+		color: #fff;
+		text-align: center;
+	}
+
+	h2{
+		font-family: 'Rajdhani' , sans-serif;
+		font-size: 30px;	
+		position: absolute;
+		top: 15%;
+		width: 100%;
+		text-align: center;			
+		letter-spacing: 6px;
+		color: white;
+		text-align: center;
+		}
+	p1{
+		font-family: 'Rajdhani' , sans-serif;
+		font-size: 30px;	
+		text-align: center;			
+		letter-spacing: 6px;
+		color: white;
+		text-align: center;
+	}
+	.button {
+				/*border-radius: 25px;*/
+			border: 2px solid white;
+			color: white;
+			padding: 5px 10px;
+			position: absolute;
+			top: 75%;
+			left: 48%;
+			text-align: center;
+			/* text-decoration: none;
+			display: inline-block; */
+			font-family: 'Rajdhani' , sans-serif;
+			font-size: 30px;
+			color: black;
+			margin: 4px 2px;
+			cursor: pointer;
+			}
+	</style>
+
+<body>
+	
+	<center>
+	<h1>FILM</h1>
+	<h2>Demo Reel</h2>
+	<video id="demoreel" autoplay video width="1080" height="720">
+	  <source src="video/DemoReel2016.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+	<br>
+	</center>
+	<button class="button" onclick="playPause()">&gt; / ||</button>
+	<br>
+	<center>
+	<p1> I have been doing both narrative and videography work for 5 years+ <br> I specialize in Cinematography, Directing, and Editing</p1>
+	</center>
+	
+	<script> 
+	var myVideo = document.getElementById("demoreel"); 
+
+	function playPause() { 
+    	if (myVideo.paused) 
+        	myVideo.play(); 
+    	else 
+        	myVideo.pause(); 
+		}
+	</script>
+
+</body>
+</html>
